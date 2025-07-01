@@ -100,6 +100,13 @@ npm install cypress --save-dev
 
 ### Testing Caveats
 
+When testing the application in the CI/CD pipeline, using GitHub Actions, make sure to use headless Chrome.
+
+```yaml
+  - name: Run tests
+    run: npm test -- --watch=false --browsers=ChromeHeadless
+```
+
 
 ### Testing with HttpClient
 
