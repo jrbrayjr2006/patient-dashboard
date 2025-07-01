@@ -27,4 +27,4 @@ jobs:
               run: npm run build -- --configuration production # Update to match your build script
 
             - name: Run tests
-              run: npm test -- --watch=false --no-progress
+              run: npm test -- --watch=false --browsers=ChromeHeadless
